@@ -5,3 +5,6 @@
 ## Low-pass Filter
 1. Try analog first
 2. Mathematical filter later.
+## High-pass filter for the pickup
+Try to add the high pass-filter (DC filter) right after the pick up.
+Also, start from the unit gain for the second one.
