@@ -1,0 +1,4 @@
+1. Measures distance every 50ms
+2. Filters out impossible values
+3. Computes the RMS distance over your sampling window
+4. Sends the RMS value to your computer
