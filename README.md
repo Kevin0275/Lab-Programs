@@ -3,7 +3,7 @@
 ---
 
 ## 🎧 Sound Interference (3 Tasks)
-- [ ] Position Sensor (connected to Resistor)
+- [ ] Position Sensor, using Arduino.
 - [ ] Analog + Digital Filter (filter out other frequency from environment)
 - [ ] Introduce Phase Log to one of the Speakers
 
