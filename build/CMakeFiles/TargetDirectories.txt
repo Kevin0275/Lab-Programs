@@ -1,0 +1,3 @@
+D:/Lab programs/build/CMakeFiles/Without_Qt.dir
+D:/Lab programs/build/CMakeFiles/edit_cache.dir
+D:/Lab programs/build/CMakeFiles/rebuild_cache.dir

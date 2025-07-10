@@ -1,0 +1,56 @@
+[
+{
+  "directory": "D:/Lab programs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Without_Qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Without_Qt.dir\\main.cpp.obj -c \"D:\\Lab programs\\Project\\Without_Qt\\main.cpp\"",
+  "file": "D:/Lab programs/Project/Without_Qt/main.cpp",
+  "output": "CMakeFiles/Without_Qt.dir/main.cpp.obj"
+},
+{
+  "directory": "D:/Lab programs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Without_Qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Without_Qt.dir\\imgui\\imgui.cpp.obj -c \"D:\\Lab programs\\Project\\Without_Qt\\imgui\\imgui.cpp\"",
+  "file": "D:/Lab programs/Project/Without_Qt/imgui/imgui.cpp",
+  "output": "CMakeFiles/Without_Qt.dir/imgui/imgui.cpp.obj"
+},
+{
+  "directory": "D:/Lab programs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Without_Qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Without_Qt.dir\\imgui\\imgui_draw.cpp.obj -c \"D:\\Lab programs\\Project\\Without_Qt\\imgui\\imgui_draw.cpp\"",
+  "file": "D:/Lab programs/Project/Without_Qt/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/Without_Qt.dir/imgui/imgui_draw.cpp.obj"
+},
+{
+  "directory": "D:/Lab programs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Without_Qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Without_Qt.dir\\imgui\\imgui_tables.cpp.obj -c \"D:\\Lab programs\\Project\\Without_Qt\\imgui\\imgui_tables.cpp\"",
+  "file": "D:/Lab programs/Project/Without_Qt/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/Without_Qt.dir/imgui/imgui_tables.cpp.obj"
+},
+{
+  "directory": "D:/Lab programs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Without_Qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Without_Qt.dir\\imgui\\imgui_widgets.cpp.obj -c \"D:\\Lab programs\\Project\\Without_Qt\\imgui\\imgui_widgets.cpp\"",
+  "file": "D:/Lab programs/Project/Without_Qt/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/Without_Qt.dir/imgui/imgui_widgets.cpp.obj"
+},
+{
+  "directory": "D:/Lab programs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Without_Qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Without_Qt.dir\\imgui\\backends\\imgui_impl_win32.cpp.obj -c \"D:\\Lab programs\\Project\\Without_Qt\\imgui\\backends\\imgui_impl_win32.cpp\"",
+  "file": "D:/Lab programs/Project/Without_Qt/imgui/backends/imgui_impl_win32.cpp",
+  "output": "CMakeFiles/Without_Qt.dir/imgui/backends/imgui_impl_win32.cpp.obj"
+},
+{
+  "directory": "D:/Lab programs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Without_Qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Without_Qt.dir\\imgui\\backends\\imgui_impl_dx11.cpp.obj -c \"D:\\Lab programs\\Project\\Without_Qt\\imgui\\backends\\imgui_impl_dx11.cpp\"",
+  "file": "D:/Lab programs/Project/Without_Qt/imgui/backends/imgui_impl_dx11.cpp",
+  "output": "CMakeFiles/Without_Qt.dir/imgui/backends/imgui_impl_dx11.cpp.obj"
+},
+{
+  "directory": "D:/Lab programs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Without_Qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Without_Qt.dir\\implot\\implot.cpp.obj -c \"D:\\Lab programs\\Project\\Without_Qt\\implot\\implot.cpp\"",
+  "file": "D:/Lab programs/Project/Without_Qt/implot/implot.cpp",
+  "output": "CMakeFiles/Without_Qt.dir/implot/implot.cpp.obj"
+},
+{
+  "directory": "D:/Lab programs/build",
+  "command": "C:\\mingw64\\bin\\g++.exe  @CMakeFiles/Without_Qt.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\Without_Qt.dir\\implot\\implot_items.cpp.obj -c \"D:\\Lab programs\\Project\\Without_Qt\\implot\\implot_items.cpp\"",
+  "file": "D:/Lab programs/Project/Without_Qt/implot/implot_items.cpp",
+  "output": "CMakeFiles/Without_Qt.dir/implot/implot_items.cpp.obj"
+}
+]

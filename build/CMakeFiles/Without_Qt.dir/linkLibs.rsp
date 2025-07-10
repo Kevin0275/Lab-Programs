@@ -1,0 +1,1 @@
+  -LD:/LABPRO~1/Project/WITHOU~1/PORTAU~1/install/lib  -lportaudio -lwinmm -lsetupapi -ld3d11 -ldxgi -ld3dcompiler -ldwmapi -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

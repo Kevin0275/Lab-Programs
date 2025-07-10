@@ -1,0 +1,9 @@
+D:/Lab programs/Project/Without_Qt/portaudio/build/CMakeFiles/portaudio.dir
+D:/Lab programs/Project/Without_Qt/portaudio/build/CMakeFiles/portaudio_static.dir
+D:/Lab programs/Project/Without_Qt/portaudio/build/CMakeFiles/uninstall.dir
+D:/Lab programs/Project/Without_Qt/portaudio/build/CMakeFiles/edit_cache.dir
+D:/Lab programs/Project/Without_Qt/portaudio/build/CMakeFiles/rebuild_cache.dir
+D:/Lab programs/Project/Without_Qt/portaudio/build/CMakeFiles/list_install_components.dir
+D:/Lab programs/Project/Without_Qt/portaudio/build/CMakeFiles/install.dir
+D:/Lab programs/Project/Without_Qt/portaudio/build/CMakeFiles/install/local.dir
+D:/Lab programs/Project/Without_Qt/portaudio/build/CMakeFiles/install/strip.dir
