@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkinter import filedialog, messagebox
+from tkinter import filedialog, messagebox, simpledialog
 import threading
 import queue
 import serial
@@ -13,7 +13,7 @@ import time
 import csv
 
 # ---- SETTINGS ----
-ARDUINO_PORT = 'COM3'   # <---- Set to your actual Arduino port
+ARDUINO_PORT = 'COM4'   # <---- Set to your actual Arduino port
 ARDUINO_BAUD = 9600
 AUDIO_DURATION = 0.05   # seconds (50ms for each amplitude measurement)
 AUDIO_RATE = 44100
@@ -22,6 +22,35 @@ AUDIO_RATE = 44100
 data_queue = queue.Queue()
 recording = False
 data = []  # (distance, amplitude) pairs
+mic_device_index = None
+
+def list_input_devices():
+    devices = sd.query_devices()
+    result = []
+    for i, dev in enumerate(devices):
+        if dev['max_input_channels'] > 0:
+            result.append(f"{i}: {dev['name']} (Channels: {dev['max_input_channels']})")
+    return "\n".join(result)
+
+def prompt_mic_index(root):
+    devices = sd.query_devices()
+    device_list = [f"{i}: {dev['name']} (Channels: {dev['max_input_channels']})"
+                   for i, dev in enumerate(devices) if dev['max_input_channels'] > 0]
+    msg = "Available Input Devices:\n" + "\n".join(device_list) + "\n\nEnter microphone device index:"
+    idx = None
+    while True:
+        idx = simpledialog.askinteger("Select Microphone", msg, parent=root)
+        if idx is None:
+            messagebox.showerror("Error", "Microphone selection cancelled. Exiting.")
+            root.quit()
+            exit()
+        try:
+            dev = sd.query_devices(idx)
+            if dev['max_input_channels'] > 0:
+                return idx
+        except Exception:
+            pass
+        messagebox.showerror("Error", f"Index {idx} is not a valid input device. Try again.")
 
 def serial_reader(stop_event):
     """Read distance from Arduino serial and push into queue."""
@@ -44,9 +73,9 @@ def serial_reader(stop_event):
     ser.close()
 
 def get_mic_rms():
-    """Get RMS amplitude from mic."""
     try:
-        audio = sd.rec(int(AUDIO_DURATION * AUDIO_RATE), samplerate=AUDIO_RATE, channels=1, dtype='float32')
+        audio = sd.rec(int(AUDIO_DURATION * AUDIO_RATE), samplerate=AUDIO_RATE,
+                       channels=1, dtype='float32', device=mic_device_index)
         sd.wait()
         rms = np.sqrt(np.mean(audio ** 2))
         return float(rms)
@@ -163,7 +192,11 @@ class App:
             self.after_id = None
 
 def main():
+    global mic_device_index
     root = tk.Tk()
+    root.withdraw()  # Hide window while selecting mic
+    mic_device_index = prompt_mic_index(root)
+    root.deiconify()
     app = App(root)
     root.mainloop()
 
